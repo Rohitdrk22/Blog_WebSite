@@ -6,18 +6,20 @@
 }
 
 body {
-  height: 100vh;
+  min-height: 100vh;
   background: linear-gradient(135deg, #667eea, #764ba2);
   display: flex;
   align-items: center;
   justify-content: center;
+  padding: 20px; /* important for mobile spacing */
 }
 
 .container {
   background: #fff;
-  padding: 30px;
-  width: 350px;
-  border-radius: 10px;
+  padding: 30px 25px;
+  width: 100%;
+  max-width: 420px; /* bigger on desktop, fits mobile */
+  border-radius: 12px;
   box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
   text-align: center;
 }
@@ -25,15 +27,16 @@ body {
 .container h2 {
   margin-bottom: 20px;
   color: #333;
+  font-size: 24px;
 }
 
 .container input {
   width: 100%;
-  padding: 12px;
-  margin: 10px 0;
-  border-radius: 5px;
+  padding: 14px;
+  margin: 12px 0;
+  border-radius: 8px;
   border: 1px solid #ccc;
-  font-size: 14px;
+  font-size: 16px; /* bigger for mobile */
 }
 
 .container input:focus {
@@ -43,14 +46,14 @@ body {
 
 .container button {
   width: 100%;
-  padding: 12px;
+  padding: 14px;
   background: #667eea;
   border: none;
   color: #fff;
-  font-size: 16px;
-  border-radius: 5px;
+  font-size: 17px;
+  border-radius: 8px;
   cursor: pointer;
-  margin-top: 10px;
+  margin-top: 12px;
 }
 
 .container button:hover {
@@ -58,8 +61,8 @@ body {
 }
 
 .container p {
-  margin-top: 15px;
-  font-size: 14px;
+  margin-top: 18px;
+  font-size: 15px;
 }
 
 .container a {
@@ -74,12 +77,31 @@ body {
 
 .message {
   color: red;
+  margin-bottom: 12px;
+  font-size: 14px;
+}
+
+/* Profile image */
+.profile {
+  height: 140px;
+  width: 140px;
+  object-fit: cover;
+  border-radius: 50%;
   margin-bottom: 10px;
 }
 
-.profile {
-    height: 200px;
-    width: 200px;
-    object-fit: fill;
-    border-radius: 50%;
+/* 📱 Extra improvements for very small screens */
+@media (max-width: 400px) {
+  .container {
+    padding: 25px 20px;
+  }
+
+  .container h2 {
+    font-size: 22px;
+  }
+
+  .profile {
+    height: 120px;
+    width: 120px;
+  }
 }
