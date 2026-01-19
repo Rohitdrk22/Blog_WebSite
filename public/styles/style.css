@@ -11,32 +11,35 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 20px; /* important for mobile spacing */
+  padding: 16px;
 }
 
+/* 📦 Main card */
 .container {
   background: #fff;
-  padding: 30px 25px;
   width: 100%;
-  max-width: 420px; /* bigger on desktop, fits mobile */
-  border-radius: 12px;
-  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+  max-width: 500px;        /* ⬅️ BIGGER */
+  padding: 35px 30px;      /* ⬅️ MORE SPACE */
+  border-radius: 14px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.25);
   text-align: center;
 }
 
+/* 🏷️ Title */
 .container h2 {
-  margin-bottom: 20px;
+  margin-bottom: 25px;
   color: #333;
-  font-size: 24px;
+  font-size: 28px;         /* ⬅️ BIGGER */
 }
 
+/* 🧾 Inputs */
 .container input {
   width: 100%;
-  padding: 14px;
-  margin: 12px 0;
-  border-radius: 8px;
+  padding: 18px;           /* ⬅️ BIGGER */
+  margin: 14px 0;
+  border-radius: 10px;
   border: 1px solid #ccc;
-  font-size: 16px; /* bigger for mobile */
+  font-size: 18px;         /* ⬅️ BIGGER TEXT */
 }
 
 .container input:focus {
@@ -44,25 +47,27 @@ body {
   border-color: #667eea;
 }
 
+/* 🔘 Button */
 .container button {
   width: 100%;
-  padding: 14px;
+  padding: 18px;           /* ⬅️ BIGGER */
   background: #667eea;
   border: none;
   color: #fff;
-  font-size: 17px;
-  border-radius: 8px;
+  font-size: 19px;         /* ⬅️ BIGGER */
+  border-radius: 10px;
   cursor: pointer;
-  margin-top: 12px;
+  margin-top: 18px;
 }
 
 .container button:hover {
   background: #5a67d8;
 }
 
+/* ℹ️ Text */
 .container p {
-  margin-top: 18px;
-  font-size: 15px;
+  margin-top: 20px;
+  font-size: 16px;         /* ⬅️ BIGGER */
 }
 
 .container a {
@@ -75,33 +80,30 @@ body {
   text-decoration: underline;
 }
 
+/* ⚠️ Message */
 .message {
   color: red;
-  margin-bottom: 12px;
-  font-size: 14px;
+  margin-bottom: 15px;
+  font-size: 16px;
 }
 
-/* Profile image */
+/* 🖼️ Profile image */
 .profile {
-  height: 140px;
-  width: 140px;
+  height: 160px;
+  width: 160px;
   object-fit: cover;
   border-radius: 50%;
-  margin-bottom: 10px;
+  margin-bottom: 15px;
 }
 
-/* 📱 Extra improvements for very small screens */
-@media (max-width: 400px) {
+/* 📱 Mobile-specific boost */
+@media (max-width: 600px) {
   .container {
-    padding: 25px 20px;
+    max-width: 95vw;      /* ⬅️ USE ALMOST FULL SCREEN */
+    padding: 40px 25px;
   }
 
   .container h2 {
-    font-size: 22px;
-  }
-
-  .profile {
-    height: 120px;
-    width: 120px;
+    font-size: 30px;
   }
 }
