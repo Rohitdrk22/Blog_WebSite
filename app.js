@@ -46,7 +46,7 @@ const writeBlogs = (data) => {
 
 //---------------------------------Login Page--------------------------------- 
 //Login page Rout
-app.get("/login", (req, res) => {
+app.get("/", (req, res) => {
   res.render("login", { message: "" });
 });
 
@@ -103,7 +103,7 @@ app.post("/register", (req, res) => {
 
 
 //---------------------------------Home Page of the Website---------------------------------
-app.get("/", (req, res) => {
+app.get("/home", (req, res) => {
   const blogData = readBlogs();
 
   const authors = [...new Set(blogData.blogs.map(b => b.author))];
