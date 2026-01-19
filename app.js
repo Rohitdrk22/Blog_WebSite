@@ -85,22 +85,30 @@ app.post("/register", (req, res) => {
   const { username, password } = req.body;
   const data = readData();
 
-  const exists = data.users.find(u => u.username === username);
+  const exists = data.users.find(
+    u => u.username.toLowerCase() === username
+  );
+
   if (exists) {
     return res.render("register", {
       message: "User already exists"
     });
   }
 
+  // Save new user
   data.users.push({ username, password });
   writeData(data);
 
+  // Go to login page with success message
   res.render("login", {
     message: "User registered successfully"
   });
 });
 
-
+//Login page Rout
+app.get("/login", (req, res) => {
+  res.render("login", { message: "" });
+});
 
 //---------------------------------Home Page of the Website---------------------------------
 app.get("/home", (req, res) => {
