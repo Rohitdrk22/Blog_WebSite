@@ -1,0 +1,25 @@
+{
+  "blogs": [
+    {
+      "id": 1768824188370,
+      "title": "Why I Started This Blogging Website",
+      "content": "I started this blogging website as a personal space to document my learning journey in programming and web development. While building projects, I often realized that writing things down helps me understand concepts better and track my progress. Through this blog, I want to share practical experiences, small wins, mistakes, and lessons learned while working with technologies like JavaScript, Node.js, Express, and frontend frameworks. My goal is not just to write tutorials, but to share real-world insights that can help other developers. This platform is also a reminder for myself to stay consistent, curious, and always keep improving. If even one blog helps someone learn something new, this effort will be worth it.",
+      "author": "Rohit Kumar",
+      "createdAt": "2026-01-19T12:03:08.370Z"
+    },
+    {
+      "id": 1768824217519,
+      "title": "Why You Should Play Rocket League After Coding ",
+      "content": "Blog Content: After long hours of coding and debugging, your brain deserves a break — and Rocket League is the perfect game for that. It’s fast, competitive, and easy to start, yet incredibly hard to master. Rocket League combines football with rocket-powered cars, which makes every match exciting and unpredictable. A quick 5–minute game can instantly refresh your mind and help you return to coding with better focus. The game also improves reflexes, teamwork, and decision-making — skills that are surprisingly useful in real-life problem solving and development work. If you’re a developer looking for a fun way to unwind without completely switching off your brain, Rocket League is definitely worth trying.",
+      "author": "Rohit Kumar",
+      "createdAt": "2026-01-19T12:03:37.519Z"
+    },
+    {
+      "id": 1768824669669,
+      "title": "Why Traveling Helps You Grow Beyond the Screen",
+      "content": "Blog Content: Traveling is one of the best ways to reset your mind and gain a fresh perspective on life. Stepping away from screens and routines allows you to experience new cultures, places, and people. Every journey teaches something — patience during delays, curiosity while exploring new streets, and gratitude for simple moments. Traveling also sparks creativity, which often reflects back into your work and personal projects. Whether it’s a short weekend trip or a long adventure, traveling helps you disconnect from daily stress and reconnect with yourself. Sometimes, the best ideas come when you’re far away from your comfort zone.",
+      "author": "MMT",
+      "createdAt": "2026-01-19T12:11:09.669Z"
+    }
+  ]
+}

@@ -1,0 +1,62 @@
+<%- include("partials/header.ejs") %>
+
+<div class="container mt-5">
+  <div class="row justify-content-center">
+    <div class="col-md-8">
+
+      <div class="card shadow-sm">
+        <div class="card-header bg-primary text-white">
+          <h4 class="mb-0">Create New Blog</h4>
+        </div>
+
+        <div class="card-body">
+          <form action="/blog" method="POST">
+
+            <div class="mb-3">
+              <label class="form-label">Title</label>
+              <input
+                type="text"
+                name="title"
+                class="form-control"
+                placeholder="Enter blog title"
+                required
+              />
+            </div>
+
+            <div class="mb-3">
+              <label class="form-label">Content</label>
+              <textarea
+                name="content"
+                class="form-control"
+                rows="6"
+                placeholder="Write your blog content here..."
+                required
+              ></textarea>
+            </div>
+
+            <div class="mb-3">
+              <label class="form-label">Author</label>
+              <input
+                type="text"
+                name="author"
+                class="form-control"
+                placeholder="Your name"
+                required
+              />
+            </div>
+
+            <div class="d-flex justify-content-end">
+              <button type="submit" class="btn btn-primary px-4">
+                Publish
+              </button>
+            </div>
+
+          </form>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+<%- include("partials/footer.ejs") %> 
