@@ -103,7 +103,7 @@ app.post("/register", (req, res) => {
 
 
 //---------------------------------Home Page of the Website---------------------------------
-app.get("/home", (req, res) => {
+app.get("/", (req, res) => {
   const blogData = readBlogs();
 
   const authors = [...new Set(blogData.blogs.map(b => b.author))];
