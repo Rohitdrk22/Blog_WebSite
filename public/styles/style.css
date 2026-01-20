@@ -16,18 +16,13 @@ body {
 
 .container {
   background: #fff;
+  padding: 30px 25px;
   width: 100%;
-  min-height: 100vh;        /* ⬅️ FILL SCREEN HEIGHT */
-  padding: 40px 25px;
-  border-radius: 0;         /* ⬅️ FULLSCREEN LOOK */
-  box-shadow: none;         /* ⬅️ APP-LIKE LOOK */
+  max-width: 420px; /* bigger on desktop, fits mobile */
+  border-radius: 12px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
   text-align: center;
-
-  display: flex;            /* ⬅️ CENTER CONTENT */
-  flex-direction: column;
-  justify-content: center;
 }
-
 
 .container h2 {
   margin-bottom: 20px;
@@ -108,15 +103,5 @@ body {
   .profile {
     height: 120px;
     width: 120px;
-  }
-}
-
-/* 💻 On bigger screens, make it a card again */
-@media (min-width: 768px) {
-  .container {
-    min-height: auto;
-    max-width: 420px;
-    border-radius: 14px;
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.25);
   }
 }
